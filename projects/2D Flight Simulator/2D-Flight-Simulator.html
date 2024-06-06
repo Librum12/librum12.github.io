@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../3rdpartycss.css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+    <link rel="shortcut icon" href="bilder/utn.jpg" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-18M3F03SF1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-18M3F03SF1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Flight Simulator</title>
+</head>
+<body style="background-image: url('https://source.unsplash.com/random'); background-size: cover;">
+    <div class="glasstransparent project-gamedesc">
+        <h1>2D Flight Simulator</h1>
+        <p style="color: gainsboro;"><b>By Night174</b></p>
+        <p>A simple side-scrolling flying game, where you have to avoid the buildings and shoot down the planes, before they reach you.</p>
+        <h2>Controls</h2>
+        <p>You can press "E" to shoot and press "W" to lock the plane's position, to make it easier to aim at the planes. You can move the plane with your mouse</p>
+        <h2>Download</h2>
+        <a href="downloads/windows-flight-sim.zip">Windows (zip)</a>
+        <br>
+        <a href="downloads/linux-flight-sim.zip">Linux (zip)</a>
+    </div>
+    <div class="glasstransparent project-projiframe-div">
+        <iframe class="project-projiframe-iframe" src="html-flight-sim.html" frameborder="0" id="fullscreenelem"></iframe>
+    </div>
+    <div class="glasstransparent project-fullscreen">
+            <img src="bilder/fullscreen.png" alt="" style="height: 1.5em;" onclick="openFullscreen();">
+    </div>
+<!--some script-->
+<script src="js/fullscreen.js"></script>
+</body>
+</html>
