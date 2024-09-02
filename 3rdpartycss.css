@@ -41,6 +41,11 @@
     margin-bottom: 1.875em;
     margin-left: 1.875em;
     transition: 0.5s;
+    img {
+        height: 6.25em;
+        height: 6.25em; 
+        border-radius: 1em;
+    }
     .launcher {
         visibility: hidden;
     }
