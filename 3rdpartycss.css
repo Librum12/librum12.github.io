@@ -17,6 +17,21 @@
     white-space: nowrap;
 }
 
+.newsfrontpage {
+    height: 12rem;
+    p {
+        float: left;
+        width: 38em;
+        margin-left: 1em;
+    }
+    img {
+        height: 8em;
+        border-radius: 5px; 
+        float: right; 
+        margin-right: 1em;
+    }
+}
+
 .project {
     text-align: center;
     overflow: hidden;
@@ -38,24 +53,66 @@
     }
 }
 
+/* Dark overlay styles */
+.project-comes-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-comes-soon:hover::before {
+    display: block;
+    opacity: 0.6;
+}
+
+/* Overlay text */
+.project-comes-soon::after {
+    content: "Coming Soon!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 2;
+    display: none;
+}
+
+.project-comes-soon:hover::after {
+    display: block;
+}
+/*end coming soon*/
+
 .launcher {
-width: 30%;
-height: 3em;
-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
-border-radius: 5px;
-background-color: rgba(255, 255, 255, .15);
-backdrop-filter: blur(5px);
-margin: auto;
-border: none; /* Removes the default button border */
-color: #000; /* Changes the button text color to black */
-transition: all 0.3s ease; /* Adds a transition effect when button state changes */
-cursor: pointer;
+    width: 30%;
+    height: 3em;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    border: none; /* Removes the default button border */
+    color: #000; /* Changes the button text color to black */
+    transition: all 0.3s ease; /* Adds a transition effect when button state changes */
+    cursor: pointer;
 }
+
 .launcher:hover {
-transform: scale(1.05); /* Slightly enlarges the button when hovered*/
+    transform: scale(1.05); /* Slightly enlarges the button when hovered*/
 }
+
 .launcher:active {
-transform: scale(1);
+    transform: scale(1);
 }
 
 .member {
@@ -76,22 +133,22 @@ transform: scale(1);
 }
 
 .project-projiframe-div {
-height: 30rem;
-width: 50rem;
-float: right;
-display: flex;
-justify-content: center; /* Centers horizontally */
-align-items: center; /* Centers vertically if the parent div has a specified height */
-margin-bottom: 1.875em;
-margin-left: 1.875em;
-margin-top: 1.875em;
-margin-right: 1.875em;
+    height: 30rem;
+    width: 50rem;
+    float: right;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically if the parent div has a specified height */
+    margin-bottom: 1.875em;
+    margin-left: 1.875em;
+    margin-top: 1.875em;
+    margin-right: 1.875em;
 }
 
 .project-projiframe-iframe {
-height: 29em;
-width: 49em;
-border-radius: 5px;
+    height: 29em;
+    width: 49em;
+    border-radius: 5px;
 }
 
 .project-fullscreen {
