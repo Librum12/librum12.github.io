@@ -18,9 +18,10 @@
 }
 
 .newsfrontpage {
-    height: 12rem;
+    height: 13rem;
     transition: 0.5s;
-    p {
+    text-align: center;
+    .newstext {
         float: left;
         width: 38em;
         margin-left: 1em;
@@ -31,21 +32,17 @@
         float: right; 
         margin-right: 1em;
     }
+    .newsdatefrontpage {
+        color: gainsboro;
+        text-align: center;
+        margin-top: 0.01em;
+        margin-bottom: 0.02em;
+        font-size: 0.9em;
+    }
 }
 
 .newsfrontpage:hover {
     transform: scale(1.03);
-}
-
-.newsdatefrontpage {
-    color: gainsboro;
-    text-align: center;
-    margin-left: 1em;
-    margin-top: 0.01em;
-    margin-bottom: 0.02em;
-    font-size: 0.8em;
-    align-items: center;
-    justify-content: center;
 }
 
 .project {
