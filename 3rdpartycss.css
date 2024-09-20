@@ -19,6 +19,7 @@
 
 .newsfrontpage {
     height: 12rem;
+    transition: 0.5s;
     p {
         float: left;
         width: 38em;
@@ -30,6 +31,21 @@
         float: right; 
         margin-right: 1em;
     }
+}
+
+.newsfrontpage:hover {
+    transform: scale(1.03);
+}
+
+.newsdatefrontpage {
+    color: gainsboro;
+    text-align: center;
+    margin-left: 1em;
+    margin-top: 0.01em;
+    margin-bottom: 0.02em;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
 }
 
 .project {
@@ -122,8 +138,14 @@
 
 .member {
     width: 50em; 
-    height: 17.5em; 
+    height: 14.5em; 
     margin-bottom: 1.875em;
+    img {
+        float: left;
+        height: 7em;
+        margin-left: 1em;
+        border-radius: 50%;
+    }
 }
 
 .project-gamedesc {
@@ -166,4 +188,7 @@
     height: 1.6em;
     width: 1.6em;
     border-radius: 3px;
+    img {
+        height: 1.5em;
+    }
 }
